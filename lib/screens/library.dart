@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:musicplayer/constants.dart';
 import 'package:musicplayer/models/category.dart';
@@ -13,7 +15,7 @@ class Library extends StatelessWidget {
 
   Widget genreCard(String img, String title, String foll) {
     return Container(
-      padding: EdgeInsets.all(30),
+      padding: const EdgeInsets.all(30),
       decoration: BoxDecoration(
         image: DecorationImage(image: AssetImage(gcard)),
       ),
