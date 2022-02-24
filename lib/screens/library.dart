@@ -161,7 +161,7 @@ class Library extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   //we call the song card template widget
-                  Songcard(1, art1, 'owowow', 'sau', '3:11'),
+                  Songcard(1,art1, 'owowow', 'sau', '3:11'),
                   Songcard(2, art2, 'The Box', 'Roddy Rich', '2:15'),
                   Songcard(3, art3, 'Dont Start Now', 'Dua Lipa ', '3:51'),
                   Songcard(4, art4, 'Circles', 'Post Molone ', '3:01'),
@@ -196,6 +196,16 @@ class Library extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+}
+class  extends StatelessWidget {
+  
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      
     );
   }
 }
