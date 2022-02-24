@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:musicplayer/constants.dart';
+import 'package:musicplayer/models/category.dart';
 import 'package:musicplayer/screens/nowplaing.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class Library extends StatelessWidget {
+  final List<Music> musiclist = Music.getMusic();
+
+  get index => null;
+
   //template for genre card
+
   Widget genreCard(String img, String title, String foll) {
     return Container(
       padding: EdgeInsets.all(30),
@@ -152,7 +159,7 @@ class Library extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   //we call the song card template widget
-                  Songcard(1, art1, 'BlindingLights', 'The Weekend', '3:11'),
+                  Songcard(1, art1, 'owowow', 'sau', '3:11'),
                   Songcard(2, art2, 'The Box', 'Roddy Rich', '2:15'),
                   Songcard(3, art3, 'Dont Start Now', 'Dua Lipa ', '3:51'),
                   Songcard(4, art4, 'Circles', 'Post Molone ', '3:01'),
